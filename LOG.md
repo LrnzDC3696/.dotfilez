@@ -70,3 +70,39 @@ Basically most of the above but in one line
 ```bash
 sudo pacman -Sy --noconfirm discord github-cli neovim tmux python fzf tree neofetch cmatrix && pacman -S --noconfirm --needed base-devel git && git clone https://aur.archlinux.org/yay-git.git && cd yay-git && makepkg -si && yay -S google-chrome
 ```
+
+## Other stuff that I themed (default is dracula):
+
+### Terminal
+
+- Tmux
+- git
+- fzf
+- Vim
+- Zsh
+- zsh syntax highlighting
+
+### Apps
+
+- steam
+- libreoffice
+
+### Sites
+
+- facebook messenger
+- github
+- monkeytype
+
+### My phone
+
+- nova launcher
+- termux
+
+## Stuff Installed
+
+- i3wm
+
+## Other stuff I did
+
+- setup git with gh
+- added discord, chrome, terminal to autostart app
