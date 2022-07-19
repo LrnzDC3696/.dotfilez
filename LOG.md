@@ -14,6 +14,7 @@ Follow this [YT tutorial](https://www.youtube.com/watch?v=bofM9tuZUs4&ab_channel
   - Style: Matcha-dark-azul
   - Icons: Papirus
 - Customize panel
+  - autohide panel: always
   - removed workspace widget
   - added powermanagement widget
   - added keyboard layout widget
@@ -70,7 +71,9 @@ Then run just run the file \
 Theme should be dracula go install it [here](https://betterdiscord.app/theme/dracula) \
 Choose it by bettercord's settings.
 
-## Installin Cmdline stuff
+## Setting up terminal stuff
+
+### Installin stuff
 
 To have a better installing experience do `sudo -s`
 
@@ -92,12 +95,50 @@ pacman -S --noconfirm fzf tree neofetch cmatrix
 yay -S gotop
 ```
 
-### For my future lazy self
+#### For my future lazy self
 
 Basically most of the above but in one line
 ```bash
-sudo pacman -Sy --noconfirm discord github-cli neovim tmux python fzf tree neofetch cmatrix && pacman -S --noconfirm --needed base-devel git && git clone https://aur.archlinux.org/yay-git.git && cd yay-git && makepkg -si && yay -S google-chrome
+sudo pacman -Sy --noconfirm discord github-cli neovim tmux python fzf tree neofetch cmatrix && sudo pacman -S --noconfirm --needed base-devel git && git clone https://aur.archlinux.org/yay-git.git && cd yay-git && makepkg -si && yay -S google-chrome
 ```
+
+### Setting up stuff
+
+#### Zsh
+
+##### On terminal app 
+
+Edit > Preference > General > Command > Custom Command \
+Set Custom Command : `/bin/zsh`
+
+##### On command line
+
+```bash
+# To list available shell
+chsh -l
+
+# Change to the given shell path
+chsh -s path/to/shell
+
+# Check which shell is running 
+which $SHELL
+```
+
+#### Tmux
+
+
+
+#### Neovim
+
+
+
+#### Git
+
+
+
+#### Xmodmap
+
+
 
 ## Themin
 
@@ -130,11 +171,13 @@ yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
   - nova launcher https://draculatheme.com/nova-launcher
   - termux https://draculatheme.com/termux
 
-## Stuff Installed
+## Othes stuff
+
+### Stuff Installed
 
 - i3wm
 
-## Other stuff I did
+### Other stuff I did
 
 - setup git with gh
 - added discord, chrome, terminal to autostart app
