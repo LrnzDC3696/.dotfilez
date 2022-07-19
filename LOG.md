@@ -35,8 +35,13 @@ Choose it by bettercord's settings.
 
 ## Setup xfce's Theme ([dracula](https://draculatheme.com/gtk))
 
+[Inspiration](https://www.reddit.com/r/unixporn/comments/b1sysr/i3_dracula_aka_cute_ghost/) \
 Follow the link above \
-Download the [wallpapers](https://github.com/dracula/wallpaper)
+Download the [wallpapers](https://github.com/dracula/wallpaper) \
+Download the fonts in cmd line [`fantasque-sans-mono`](https://archlinux.org/packages/community/any/ttf-fantasque-sans-mono/) [`google-sans`](https://aur.archlinux.org/packages/ttf-google-sans)
+```bash
+yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
+```
 
 ## Setup Terminal Theme ([dracula](https://draculatheme.com/xfce4-terminal))
 
