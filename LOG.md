@@ -33,7 +33,9 @@ Then run just run the file \
 Theme should be dracula go install it [here](https://betterdiscord.app/theme/dracula) \
 Choose it by bettercord's settings.
 
-## Setup xfce's Theme ([dracula](https://draculatheme.com/gtk))
+## Setup xfce theme and other small stuff ([dracula](https://draculatheme.com/gtk))
+
+### Theme
 
 [Inspiration](https://www.reddit.com/r/unixporn/comments/b1sysr/i3_dracula_aka_cute_ghost/) \
 Follow the link above \
@@ -42,6 +44,15 @@ Download the fonts in cmd line [`fantasque-sans-mono`](https://archlinux.org/pac
 ```bash
 yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
 ```
+
+### Adjusted workspace
+
+Changed it to 1 instead of 2
+
+### Added widgets to the panel
+
+- battery widget
+- Language widget
 
 ## Setup Terminal Theme ([dracula](https://draculatheme.com/xfce4-terminal))
 
