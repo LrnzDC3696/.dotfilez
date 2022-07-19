@@ -10,6 +10,16 @@ Change the keyboard layout to become colemak \
 Change the capslock key to become ctrl [YT tutorial](https://www.youtube.com/watch?v=r3hxmzwwyyE&t=564s&ab_channel=BrodieRobertson) \
 (The xmodmap file is added in this repo)
 
+## Fix the brightness adjustments
+
+Add `acpi_backlight=vone acpi_osi=Linux` \
+Here -> `GRUB_CMDLINE_LINUX="acpi_backlight=none acpi_osi=Linux"` \
+
+```bash
+sudo nvim /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
 ## Install Chrome ([dracula](https://draculatheme.com/chrome))
 
 ```bash
