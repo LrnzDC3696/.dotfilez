@@ -72,22 +72,6 @@ Choose it by bettercord's settings.
 
 ## Installin Cmdline stuff
 
-## Themin
-
-[Inspiration](https://www.reddit.com/r/unixporn/comments/b1sysr/i3_dracula_aka_cute_ghost/) \
-Follow the link above \
-Download the [wallpapers](https://github.com/dracula/wallpaper) \
-Download the fonts in cmd line [`fantasque-sans-mono`](https://archlinux.org/packages/community/any/ttf-fantasque-sans-mono/) [`google-sans`](https://aur.archlinux.org/packages/ttf-google-sans)
-```bash
-yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
-```
-
-### Setup Terminal Theme ([dracula](https://draculatheme.com/xfce4-terminal))
-
-Do the above and checkout preset settings
-
-## Install the setup
-
 To have a better installing experience do `sudo -s`
 
 ```bash
@@ -114,34 +98,37 @@ Basically most of the above but in one line
 ```bash
 sudo pacman -Sy --noconfirm discord github-cli neovim tmux python fzf tree neofetch cmatrix && pacman -S --noconfirm --needed base-devel git && git clone https://aur.archlinux.org/yay-git.git && cd yay-git && makepkg -si && yay -S google-chrome
 ```
-## Setup xfce theme and other small stuff ([dracula](https://draculatheme.com/gtk))
 
-### Other stuff that I themed (default is dracula):
+## Themin
 
-### Terminal
+[Inspiration](https://www.reddit.com/r/unixporn/comments/b1sysr/i3_dracula_aka_cute_ghost/) \
+Follow the link above \
+Download the [wallpapers](https://github.com/dracula/wallpaper) \
+Download the fonts in cmd line [`fantasque-sans-mono`](https://archlinux.org/packages/community/any/ttf-fantasque-sans-mono/) [`google-sans`](https://aur.archlinux.org/packages/ttf-google-sans)
+```bash
+yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
+```
 
-- Tmux
-- git
-- fzf
-- Vim
-- Zsh
-- zsh syntax highlighting
+### Stuff that I themed:
 
-### Apps
-
-- steam
-- libreoffice
-
-### Sites
-
-- facebook messenger
-- github
-- monkeytype
-
-### My phone
-
-- nova launcher
-- termux
+- gtk https://draculatheme.com/gtk
+  - Steam https://draculatheme.com/steam
+  - Libreoffice https://draculatheme.com/libreoffice
+- Xfce4-Terminal https://draculatheme.com/xfce4-terminal
+  - Tmux https://draculatheme.com/tmux
+  - Git https://draculatheme.com/git
+  - Fzf https://draculatheme.com/fzf
+  - Vim https://draculatheme.com/vim
+  - Zsh https://draculatheme.com/zsh
+  - Zsh syntax highlighting https://draculatheme.com/zsh-syntax-highlighting
+- Chrome https://draculatheme.com/chrome
+  - Github https://draculatheme.com/github
+  - Stackoverflow https://draculatheme.com/stackoverflow
+  - Facebook Messenger https://draculatheme.com/facebook-messenger
+  - Monkeytype https://draculatheme.com/monkeytype
+- My phone
+  - nova launcher https://draculatheme.com/nova-launcher
+  - termux https://draculatheme.com/termux
 
 ## Stuff Installed
 
