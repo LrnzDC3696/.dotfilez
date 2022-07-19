@@ -4,23 +4,48 @@
 
 Follow this [YT tutorial](https://www.youtube.com/watch?v=bofM9tuZUs4&ab_channel=KskRoyal)
 
-## Change the keyboard layout to colemak (CHAD)
+## System settings
+
+### Small Stuff
+
+- Connect wifi
+- Change about me
+- Customize appearance
+  - Style: Matcha-dark-azul
+  - Icons: Papirus
+- Customize panel
+  - removed workspace widget
+  - added powermanagement widget
+  - added keyboard layout widget
+- Customize Power Manager
+  - Buttons
+  - **HANDLE DISPLAY BUTTON KEYS**!!!
+- Customzie app/remove applications
+  - software center > 3 dots at top right > preferences
+    - enable AUR
+    - mirror official repository to current country
+
+### Change the keyboard layout to colemak (CHAD)
 
 Change the keyboard layout to become colemak \
 Change the capslock key to become ctrl [YT tutorial](https://www.youtube.com/watch?v=r3hxmzwwyyE&t=564s&ab_channel=BrodieRobertson) \
 (The xmodmap file is added in this repo)
 
-## Fix the brightness adjustments
+### Fix the brightness adjustments
 
 Add `acpi_backlight=vone acpi_osi=Linux` \
-Here -> `GRUB_CMDLINE_LINUX="acpi_backlight=none acpi_osi=Linux"` \
-
+Here -> `GRUB_CMDLINE_LINUX="acpi_backlight=none acpi_osi=Linux"`
 ```bash
 sudo nvim /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
+Then reboot
 
-## Install Chrome ([dracula](https://draculatheme.com/chrome))
+## Installin Application
+
+### Install Chrome ([dracula](https://draculatheme.com/chrome))
+
+NOTE: You can install this in `app/remove roftware` if AUR repository is enabled
 
 ```bash
 # Installing chrome, more info [here](https://linuxhint.com/install-google-chrome-manjaro/)
@@ -34,7 +59,9 @@ Extensions should auto install once downloaded \
 Chrome extensions I use ... (To be added) \
 Theme should be dracula!
 
-## Install Discord + Bettercord
+### Install Discord + Bettercord
+
+NOTE: You can install this in via `app/remove roftware`
 
 `pacman -S --noconfirm discord` \
 Install the downloader in [here](https://betterdiscord.app/FAQ) question 10 \
@@ -43,9 +70,9 @@ Then run just run the file \
 Theme should be dracula go install it [here](https://betterdiscord.app/theme/dracula) \
 Choose it by bettercord's settings.
 
-## Setup xfce theme and other small stuff ([dracula](https://draculatheme.com/gtk))
+## Installin Cmdline stuff
 
-### Theme
+## Themin
 
 [Inspiration](https://www.reddit.com/r/unixporn/comments/b1sysr/i3_dracula_aka_cute_ghost/) \
 Follow the link above \
@@ -55,16 +82,7 @@ Download the fonts in cmd line [`fantasque-sans-mono`](https://archlinux.org/pac
 yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
 ```
 
-### Adjusted workspace
-
-Changed it to 1 instead of 2
-
-### Added widgets to the panel
-
-- battery widget
-- Language widget
-
-## Setup Terminal Theme ([dracula](https://draculatheme.com/xfce4-terminal))
+### Setup Terminal Theme ([dracula](https://draculatheme.com/xfce4-terminal))
 
 Do the above and checkout preset settings
 
@@ -96,8 +114,9 @@ Basically most of the above but in one line
 ```bash
 sudo pacman -Sy --noconfirm discord github-cli neovim tmux python fzf tree neofetch cmatrix && pacman -S --noconfirm --needed base-devel git && git clone https://aur.archlinux.org/yay-git.git && cd yay-git && makepkg -si && yay -S google-chrome
 ```
+## Setup xfce theme and other small stuff ([dracula](https://draculatheme.com/gtk))
 
-## Other stuff that I themed (default is dracula):
+### Other stuff that I themed (default is dracula):
 
 ### Terminal
 
