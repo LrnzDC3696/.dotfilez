@@ -1,6 +1,6 @@
 # How I set it up
 
-## Dual boot Manjaro
+## Dual boot [Manjaro](https://manjaro.org/download/)
 
 Follow this [YT tutorial](https://www.youtube.com/watch?v=bofM9tuZUs4&ab_channel=KskRoyal)
 
@@ -10,7 +10,7 @@ Change the keyboard layout to become colemak \
 Change the capslock key to become ctrl [YT tutorial](https://www.youtube.com/watch?v=r3hxmzwwyyE&t=564s&ab_channel=BrodieRobertson) \
 (The xmodmap file is added in this repo)
 
-## Install Chrome
+## Install Chrome ([dracula](https://draculatheme.com/chrome))
 
 ```bash
 # Installing chrome, more info [here](https://linuxhint.com/install-google-chrome-manjaro/)
@@ -32,6 +32,15 @@ Install the downloader in [here](https://betterdiscord.app/FAQ) question 10 \
 Then run just run the file \
 Theme should be dracula go install it [here](https://betterdiscord.app/theme/dracula) \
 Choose it by bettercord's settings.
+
+## Setup xfce's Theme ([dracula](https://draculatheme.com/gtk))
+
+Follow the link above \
+Download the [wallpapers](https://github.com/dracula/wallpaper)
+
+## Setup Terminal Theme ([dracula](https://draculatheme.com/xfce4-terminal))
+
+Do the above and checkout preset settings
 
 ## Install the setup
 
