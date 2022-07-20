@@ -147,6 +147,8 @@ Make sure `github-cli` is installed
 
 #### Xmodmap (remapping capslock to ctrl)
 
+References: [wiki](https://wiki.archlinux.org/title/User:Larivact/old-drafts/Keyboard_input) [youtube](https://www.youtube.com/watch?v=r3hxmzwwyyE)
+Make Caps Lock Great Again By Remapping It With Xmodmap)
 Install required stuff
 ```bash
 sudo pacman -S xorg-xmodmap xorg-xev xorg-setkbmap xorg-xset
@@ -156,7 +158,6 @@ sudo pacman -S xorg-xmodmap xorg-xev xorg-setkbmap xorg-xset
 - `xorg-setkbmap` : Use to reset keyboard layout
 - `xorg-xset` : Use to allow key repeat
 
-[credits](https://wiki.archlinux.org/title/User:Larivact/old-drafts/Keyboard_input)
 run to see what to change
 `xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'`
 
