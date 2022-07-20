@@ -142,11 +142,34 @@ open tmux
 
 #### Git
 
+Make sure `github-cli` is installed
+`gh auth login`
 
+#### Xmodmap (remapping capslock to ctrl)
 
-#### Xmodmap
+Install required stuff
+```bash
+sudo pacman -S xorg-xmodmap xorg-xev xorg-setkbmap xorg-xset
+```
+- `xorg-xmodmap`! : Use to remap keys
+- `xorg-xev` : Use to get the name of keys and key sims
+- `xorg-setkbmap` : Use to reset keyboard layout
+- `xorg-xset` : Use to allow key repeat
 
+[credits](https://wiki.archlinux.org/title/User:Larivact/old-drafts/Keyboard_input)
+run to see what to change
+`xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'`
 
+paste
+```bash
+keycode {above} = Control_L NoSymbol Control_L
+add Control = Control_L
+```
+
+paste in `.xinitrc`
+```bash
+[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
+```
 
 ## Themin
 
@@ -160,30 +183,31 @@ yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
 
 ### Stuff that I themed:
 
-- gtk https://draculatheme.com/gtk
-  - Steam https://draculatheme.com/steam
-  - Libreoffice https://draculatheme.com/libreoffice
-- Xfce4-Terminal https://draculatheme.com/xfce4-terminal
-  - Tmux https://draculatheme.com/tmux
-  - Git https://draculatheme.com/git
-  - Fzf https://draculatheme.com/fzf
-  - Vim https://draculatheme.com/vim
-  - Zsh https://draculatheme.com/zsh
-  - Zsh syntax highlighting https://draculatheme.com/zsh-syntax-highlighting
-- Chrome https://draculatheme.com/chrome
-  - Github https://draculatheme.com/github
-  - Stackoverflow https://draculatheme.com/stackoverflow
-  - Facebook Messenger https://draculatheme.com/facebook-messenger
-  - Monkeytype https://draculatheme.com/monkeytype
-- My phone
-  - nova launcher https://draculatheme.com/nova-launcher
-  - termux https://draculatheme.com/termux
+- [ ] gtk https://draculatheme.com/gtk
+  - [ ] Steam https://draculatheme.com/steam
+  - [ ] Libreoffice https://draculatheme.com/libreoffice
+- [ ] Xfce4-Terminal https://draculatheme.com/xfce4-terminal
+  - [x] Tmux https://draculatheme.com/tmux 
+  - [ ] Git https://draculatheme.com/git
+  - [ ] Fzf https://draculatheme.com/fzf
+  - [ ] Vim https://draculatheme.com/vim
+  - [ ] Zsh https://draculatheme.com/zsh
+  - [ ] Zsh syntax highlighting https://draculatheme.com/zsh-syntax-highlighting
+- [x] Chrome https://draculatheme.com/chrome
+  - [x] Github https://draculatheme.com/github
+  - [x] Stackoverflow https://draculatheme.com/stackoverflow
+  - [ ] Facebook Messenger https://draculatheme.com/facebook-messenger
+  - [x] Monkeytype https://draculatheme.com/monkeytype
+- [ ] My phone
+  - [x] nova launcher https://draculatheme.com/nova-launcher
+  - [ ] termux https://draculatheme.com/termux
 
-## Othes stuff
+## Other stuff
 
 ### Stuff Installed
 
 - i3wm
+- standard notes
 
 ### Other stuff I did
 
