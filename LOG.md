@@ -138,7 +138,7 @@ open tmux
 
 #### Neovim
 
-Just copy paste manually for now.
+Download the zip file of previous codes then just use that.
 
 #### Git
 
@@ -172,6 +172,16 @@ paste in `.xinitrc`
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 ```
 **NOTE: Reboot pc to changes to take place!!!**
+
+#### Download important python packages
+- `pip` : ``
+- `poetry` : `curl -sSL https://install.python-poetry.org | python3 -`
+- `pipenv` : `pip install pipenv`
+
+### Terminal Checks
+- Check if the paths are correct to the system
+- Check if the colorscheme is correct in tmux > nvim
+- Check if development packages are installed
 
 ## Themin
 
