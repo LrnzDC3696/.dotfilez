@@ -44,6 +44,12 @@ Then reboot
 
 ## Installin Application
 
+### Installing Emoji
+
+```bash
+sudo pacman -S noto-fonts-emoji
+```
+
 ### Install Chrome ([dracula](https://draculatheme.com/chrome))
 
 NOTE: You can install this in `app/remove roftware` if AUR repository is enabled
@@ -106,12 +112,7 @@ sudo pacman -Sy --noconfirm discord github-cli neovim tmux python fzf tree neofe
 
 #### Zsh
 
-##### On terminal app 
-
-Edit > Preference > General > Command > Custom Command \
-Set Custom Command : `/bin/zsh`
-
-##### On command line
+##### Setting zsh to default
 
 ```bash
 # To list available shell
@@ -123,6 +124,7 @@ chsh -s path/to/shell
 # Check which shell is running 
 which $SHELL
 ```
+**NOTE: Reboot pc to changes to take place!!!**
 
 #### Tmux
 
