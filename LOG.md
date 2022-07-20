@@ -128,7 +128,13 @@ which $SHELL
 
 #### Tmux
 
+#### Setup [tmp](https://github.com/tmux-plugins/tpm)
 
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+open tmux
+`prefix` + `shift` + `I`
 
 #### Neovim
 
