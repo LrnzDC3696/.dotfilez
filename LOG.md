@@ -174,7 +174,7 @@ paste in `.xinitrc`
 **NOTE: Reboot pc to changes to take place!!!**
 
 #### Download important python packages
-- `pip` : ``
+- `pip` : `sudo pacman -S python-pip`
 - `poetry` : `curl -sSL https://install.python-poetry.org | python3 -`
 - `pipenv` : `pip install pipenv`
 
@@ -223,9 +223,10 @@ yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
 ### Stuff Installed
 
 - i3wm
-- standard notes
+- simple notes
 
 ### Other stuff I did
 
 - setup git with gh
+- synced email
 - added discord, chrome, terminal to autostart app
