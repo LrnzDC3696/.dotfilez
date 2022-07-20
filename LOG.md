@@ -62,7 +62,7 @@ cd yay-git
 makepkg -si
 yay -S google-chrome
 ```
-Extensions should auto install once downloaded \ 
+Extensions should auto install once downloaded \
 Chrome extensions I use ... (To be added) \
 Theme should be dracula!
 
@@ -121,7 +121,7 @@ chsh -l
 # Change to the given shell path
 chsh -s path/to/shell
 
-# Check which shell is running 
+# Check which shell is running
 which $SHELL
 ```
 **NOTE: Reboot pc to changes to take place!!!**
@@ -181,6 +181,7 @@ paste in `.xinitrc`
 ### Terminal Checks
 - Check if the paths are correct to the system
 - Check if the colorscheme is correct in tmux > nvim
+- Check if neovim is setup via :checkhealth
 - Check if development packages are installed
 
 ## Themin
@@ -202,7 +203,7 @@ yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
   - [ ] Standard notes https://draculatheme.com/standard-notes
   - [ ] Thunderbird https://draculatheme.com/thunderbird
 - [ ] Xfce4-Terminal https://draculatheme.com/xfce4-terminal
-  - [x] Tmux https://draculatheme.com/tmux 
+  - [x] Tmux https://draculatheme.com/tmux
   - [ ] Git https://draculatheme.com/git
   - [ ] Fzf https://draculatheme.com/fzf
   - [ ] Vim https://draculatheme.com/vim
