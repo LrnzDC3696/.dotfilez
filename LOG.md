@@ -40,7 +40,7 @@ Here -> `GRUB_CMDLINE_LINUX="acpi_backlight=none acpi_osi=Linux"`
 sudo nvim /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
-Then reboot
+**NOTE: Reboot pc to changes to take place!!!**
 
 ## Installin Application
 
@@ -138,7 +138,7 @@ open tmux
 
 #### Neovim
 
-
+Just copy paste manually for now.
 
 #### Git
 
@@ -171,6 +171,7 @@ paste in `.xinitrc`
 ```bash
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 ```
+**NOTE: Reboot pc to changes to take place!!!**
 
 ## Themin
 
