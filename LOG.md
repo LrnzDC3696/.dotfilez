@@ -88,7 +88,7 @@ To have a better installing experience do `sudo -s`
 pacman -Sy
 
 # Installing github-cli, neovim tmux
-pacman -S --noconfirm github-cli neovim tmux
+pacman -S --noconfirm github-cli neovim tmux xclip
 
 # Installing languages
 # python my main language
@@ -105,7 +105,7 @@ yay -S gotop
 
 Basically most of the above but in one line
 ```bash
-sudo pacman -Sy --noconfirm discord github-cli neovim tmux python fzf tree neofetch cmatrix && sudo pacman -S --noconfirm --needed base-devel git && git clone https://aur.archlinux.org/yay-git.git && cd yay-git && makepkg -si && yay -S google-chrome
+sudo pacman -Sy --noconfirm discord github-cli neovim tmux python fzf tree neofetch cmatrix && sudo pacman -S --noconfirm --needed base-devel git && git clone https://aur.archlinux.org/yay-git.git && cd yay-git && makepkg -si && yay -S google-chrome xclip
 ```
 
 ### Setting up stuff

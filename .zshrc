@@ -1,6 +1,10 @@
 # Use powerline
 USE_POWERLINE="true"
 
+if [[ -e ~/.zsh-dracula ]]; then
+  source ~/.zsh-dracula
+fi
+
 ### ===== Source manjaro-zsh-configuration ====# =
 # if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
 #   source /usr/share/zsh/manjaro-zsh-config
@@ -267,6 +271,8 @@ then
 
 fi
 
+alias ogls='/usr/bin/ls'
+alias ls='colorls --dark'
 alias c='clear'
 alias v='nvim'
 alias vim='nvim'
@@ -290,3 +296,8 @@ alias ff='cd $(find ~ ~/.config/nvim -type d -not -path "*/\.git*" | fzf)'
 if [[ -z $TMUX ]] && [[ -z $(pgrep tmux) ]]; then
     tmux
 fi
+
+source $(dirname $(gem which colorls))/tab_complete.sh
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
+export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'
