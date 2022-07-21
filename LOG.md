@@ -196,20 +196,19 @@ yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
 
 ### Stuff that I themed:
 
-- [ ] wallpapers https://draculatheme.com/wallpaper
+- [x] wallpapers https://draculatheme.com/wallpaper
 - [ ] gtk https://draculatheme.com/gtk
   - [ ] Steam https://draculatheme.com/steam
   - [ ] Libreoffice https://draculatheme.com/libreoffice
-  - [ ] Standard notes https://draculatheme.com/standard-notes
   - [ ] Thunderbird https://draculatheme.com/thunderbird
-- [ ] Xfce4-Terminal https://draculatheme.com/xfce4-terminal
+- [x] Xfce4-Terminal https://draculatheme.com/xfce4-terminal
   - [x] Tmux https://draculatheme.com/tmux
-  - [ ] Git https://draculatheme.com/git
-  - [ ] Fzf https://draculatheme.com/fzf
-  - [ ] Vim https://draculatheme.com/vim
+  - [x] Git https://draculatheme.com/git
+  - [x] Fzf https://draculatheme.com/fzf
+  - [x] Vim https://draculatheme.com/vim
   - [ ] Zsh https://draculatheme.com/zsh
-  - [ ] Zsh syntax highlighting https://draculatheme.com/zsh-syntax-highlighting
-  - [ ] Ls https://draculatheme.com/colorls
+  - [x] Zsh syntax highlighting https://draculatheme.com/zsh-syntax-highlighting
+  - [x] Ls https://draculatheme.com/colorls
 - [x] Chrome https://draculatheme.com/chrome
   - [x] Github https://draculatheme.com/github
   - [x] Stackoverflow https://draculatheme.com/stackoverflow
