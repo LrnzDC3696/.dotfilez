@@ -223,6 +223,8 @@ yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
 ### Stuff Installed
 
 - i3wm
+- screenkey
+- kazam
 
 ### Other stuff I did
 
