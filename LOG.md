@@ -9,6 +9,8 @@ Follow this [YT tutorial](https://www.youtube.com/watch?v=bofM9tuZUs4&ab_channel
 ### Small Stuff
 
 - Connect wifi
+- Setup Backup
+- Update drives
 - Change about me
 - Customize appearance
   - Style: Matcha-dark-azul
