@@ -197,10 +197,10 @@ yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
 ### Stuff that I themed:
 
 - [x] wallpapers https://draculatheme.com/wallpaper
-- [ ] gtk https://draculatheme.com/gtk
+- [x] gtk https://draculatheme.com/gtk
   - [ ] Steam https://draculatheme.com/steam
   - [ ] Libreoffice https://draculatheme.com/libreoffice
-  - [ ] Thunderbird https://draculatheme.com/thunderbird
+  - [x] Thunderbird https://draculatheme.com/thunderbird
 - [x] Xfce4-Terminal https://draculatheme.com/xfce4-terminal
   - [x] Tmux https://draculatheme.com/tmux
   - [x] Git https://draculatheme.com/git
@@ -223,7 +223,6 @@ yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
 ### Stuff Installed
 
 - i3wm
-- simple notes
 
 ### Other stuff I did
 
