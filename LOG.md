@@ -188,7 +188,7 @@ paste in `.xinitrc`
 
 ## Themin
 
-[Inspiration](https://www.reddit.com/r/unixporn/comments/b1sysr/i3_dracula_aka_cute_ghost/) \
+[Inspiration](https://www.reddit.com/r/unixporn/comments/b0sysr/i3_dracula_aka_cute_ghost/) \
 Follow the link above \
 Download the [wallpapers](https://github.com/dracula/wallpaper) \
 Download the fonts in cmd line [`fantasque-sans-mono`](https://archlinux.org/packages/community/any/ttf-fantasque-sans-mono/) [`google-sans`](https://aur.archlinux.org/packages/ttf-google-sans)
