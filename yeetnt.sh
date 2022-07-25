@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pacman -S --noconfirm git
+sudo pacman -S --noconfirm git
 
 # https://www.atlassian.com/git/tutorials/dotfiles
 {
