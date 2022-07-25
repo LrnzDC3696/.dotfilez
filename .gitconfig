@@ -18,13 +18,12 @@
 
   # List aliases.
   aliases = config --get-regexp alias
+
   # List contributors with number of commits.
   contributors = shortlog --summary --numbered
+
   # Show the user email for the current repository.
   whoami = config user.email
-
-; [commit]
-;     gpgSign = true# https://help.github.com/articles/signing-commits-using-gpg
 
 [core]
   editor = neovim
@@ -35,6 +34,9 @@
 [help]
   # Automatically correct and execute mistyped commands.
   autocorrect = 1
+
+; [commit]
+;     gpgSign = true# https://help.github.com/articles/signing-commits-using-gpg
 
 ; # URL ALIASES
 ; # -----------
