@@ -284,9 +284,20 @@ alias pt='poetry'
 alias tf='bash ~/.tmux/tmux-portal.sh'
 alias ff='cd $(find ~ ~/.config/nvim -type d -not -path "*/\.git*" | fzf)'
 
-# if tmux is not none
+# tmux stuff
+session="main"
+
+# Check if the session exists, discarding output
+# We can check $? for the exit status (zero for success, non-zero for failure)
 if [[ -z $TMUX ]] && [[ -z $(pgrep tmux) ]]; then
-    tmux
+    tmux has-session -t $session 2>/dev/null
+    if [ $? != 0 ]; then
+        # Set up your session
+        tmux new -s $session
+    else;
+        # Attach to created session
+        tmux attach-session -t $session
+    fi
 fi
 
 # For colorls dracula
