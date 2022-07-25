@@ -255,6 +255,13 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ### ===== end =====
 
 # My stuff lies here... ---------------------------------------------------------------
+source ~/.vars.sh
+
+# zsh stuff
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+bindkey '^N' complete-word       # ctrl + space | complete
+bindkey '^ ' autosuggest-accept  # shift + tab  | autosuggest
+
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -268,7 +275,7 @@ alias vim='nvim'
 alias nvimrc='cd ~/.config/nvim/'
 
 # FIX THIS to f"{BASE}/Codes"
-alias code='cd $BASE/Codes'
+alias code='cd ~/Codes'
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias resource='source ~/.zshrc'
