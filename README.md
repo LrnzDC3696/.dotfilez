@@ -4,7 +4,7 @@ A repo where I keep my linux setup (manjaro)
 
 # Auto Installation
 
-`curl https://raw.githubusercontent.com/LrnzDC3696/dotfiles/main/yeetnt.sh | echo`
+`curl https://raw.githubusercontent.com/LrnzDC3696/dotfiles/main/yeetnt.sh | sh`
 
 # Local Testing for the yeetnt.sh
 
