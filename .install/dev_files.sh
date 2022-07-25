@@ -1,22 +1,26 @@
-echo "=============== Setting up directories  ==============="
 source ~/.vars.sh
 
-if [ -r $BASE ]
+# create the required files
+if $BASE
 then
-    if ! [ -r $BASE/Codes ]
-    then
-        mkdir $BASE/Codes
-    fi
-
-    if ! [ -r $BASE/Codes/scripts ]
-    then
-        mkdir $BASE/Codes/scripts
-    fi
+    mkdir -p $BASE/Codes
+    mkdir -p $BASE/Codes/scripts
 fi
 
-echo "========================================"
-
-echo "=============== Setting up git ==============="
-# check if git and gh is installed
+# setup git
 gh auth login
-echo "========================================"
+
+# set zsh to be default shell
+if ! [ -r /usr/bin/zsh ]
+then
+    sudo pacman -S --noconfirm zsh
+    chsh -s /usr/bin/zsh
+if
+
+# install python
+# check if the package manager is good though
+sudo pacman -S --noconfirm python-pip
+
+# installing poetry
+curl -sSL https://install.python-poetry.org | python3 -
+pip install pipenv

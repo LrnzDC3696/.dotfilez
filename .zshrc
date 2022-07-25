@@ -255,6 +255,10 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ### ===== end =====
 
 # My stuff lies here... ---------------------------------------------------------------
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
 
 alias ogls='/usr/bin/ls'
 alias ls='colorls --dark'
