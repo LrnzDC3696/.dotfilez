@@ -72,7 +72,6 @@ cd betterdiscord
 npm custom_install
 npm run build
 npm run inject
-check_n_log
 
 # =======================================
 
@@ -98,3 +97,13 @@ sudo pacman -S --noconfirm python-pip
 # custom_installing poetry
 curl -sSL https://custom_install.python-poetry.org | python3 -
 pip install  pipenv
+
+#==============
+# https://github.com/mattjmorrison/dotfiles
+# Give the user a summary of what has been installed
+#==============
+echo -e "\n====== Summary ======\n"
+cat $log_file
+echo
+echo "Enjoy -LrnzDC3696"
+# rm $log_file

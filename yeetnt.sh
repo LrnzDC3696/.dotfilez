@@ -24,4 +24,4 @@ config checkout
 config config status.showUntrackedFiles no
 
 # install the script
-./yeetnt.sh
+./install.sh
