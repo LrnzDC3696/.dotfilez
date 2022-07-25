@@ -5,6 +5,37 @@
 [include]
   path = ~/.gitconfig.local
 
+[alias]
+  a = add
+  aa = add --all
+  b = branch
+  c = commit
+  co = checkout
+  d = diff
+  pl = pull
+  ph = push
+  s = status
+
+  # List aliases.
+  aliases = config --get-regexp alias
+  # List contributors with number of commits.
+  contributors = shortlog --summary --numbered
+  # Show the user email for the current repository.
+  whoami = config user.email
+
+; [commit]
+;     gpgSign = true# https://help.github.com/articles/signing-commits-using-gpg
+
+[core]
+  editor = neovim
+
+[init]
+  defaultBranch = main
+
+[help]
+  # Automatically correct and execute mistyped commands.
+  autocorrect = 1
+
 ; # URL ALIASES
 ; # -----------
 ; # Alias for Dracula Org repositories
