@@ -97,7 +97,7 @@ pacman -S --noconfirm github-cli neovim tmux xclip
 pacman -S --noconfirm python
 
 # misc stuff fzf, tree, neofetch, cmatrix
-pacman -S --noconfirm fzf tree neofetch cmatrix
+pacman -S --noconfirm fzf tree neofetch cmatrix trash-cli
 
 # Installing gotop
 yay -S gotop
@@ -199,6 +199,7 @@ yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
 ### Stuff that I themed:
 
 - [x] wallpapers https://draculatheme.com/wallpaper
+- [ ] grub https://draculatheme.com/grub
 - [x] gtk https://draculatheme.com/gtk
   - [ ] Steam https://draculatheme.com/steam
   - [ ] Libreoffice https://draculatheme.com/libreoffice
@@ -211,6 +212,7 @@ yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
   - [ ] Zsh https://draculatheme.com/zsh
   - [x] Zsh syntax highlighting https://draculatheme.com/zsh-syntax-highlighting
   - [x] Ls https://draculatheme.com/colorls
+  - [ ] Ranger https://draculatheme.com/ranger
 - [x] Chrome https://draculatheme.com/chrome
   - [x] Github https://draculatheme.com/github
   - [x] Stackoverflow https://draculatheme.com/stackoverflow
@@ -231,5 +233,6 @@ yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
 ### Other stuff I did
 
 - setup git with gh
+- installed musics
 - synced email
 - added discord, chrome, terminal to autostart app

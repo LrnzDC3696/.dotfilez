@@ -7,7 +7,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find /Users/Enzo/Codes ~/.tmux ~/.config/nvim -type d -not -path '*/\.git*' | fzf)
+    selected=$(find ~/Codes ~/.tmux ~/.config/nvim -type d -not -path '*/\.git*' | fzf)
 fi
 
 # If nothing is selected; then exit

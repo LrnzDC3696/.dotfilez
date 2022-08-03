@@ -259,6 +259,8 @@ source ~/.vars.sh
 
 # zsh stuff
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+bindkey -v
+bindkey "^P" up-line-or-search
 bindkey '^N' complete-word       # ctrl + space | complete
 bindkey '^ ' autosuggest-accept  # shift + tab  | autosuggest
 
@@ -273,6 +275,7 @@ alias c='clear'
 alias v='nvim'
 alias vim='nvim'
 alias nvimrc='cd ~/.config/nvim/'
+alias rangerc='cd ~/.config/ranger/'
 
 # FIX THIS to f"{BASE}/Codes"
 alias code='cd ~/Codes'
@@ -280,8 +283,8 @@ alias code='cd ~/Codes'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias resource='source ~/.zshrc'
 
-alias revise='sudo $PKG_MNGR -Sy'
-alias pkg='sudo $PKG_MNGR'
+alias revise='sudo pacman -Sy'
+alias pkg='sudo pacman'
 
 alias p='python'
 alias pm='python manage.py'
@@ -289,22 +292,26 @@ alias pe='pipenv'
 alias pt='poetry'
 
 alias tf='bash ~/.tmux/tmux-portal.sh'
-alias ff='cd $(find ~ ~/.config/nvim -type d -not -path "*/\.git*" | fzf)'
+alias ff='cd $(find ~/Codes ~/.config/nvim -type d -not -path "*/\.git*" | fzf)'
+alias fff='cd $(find ~ -type d -not -path "*/\.git*" | fzf)'
 
 # tmux stuff
 session="main"
 
 # Check if the session exists, discarding output
-# We can check $? for the exit status (zero for success, non-zero for failure)
-if [[ -z $TMUX ]] && [[ -z $(pgrep tmux) ]]; then
-    tmux has-session -t $session 2>/dev/null
-    if [ $? != 0 ]; then
-        # Set up your session
-        tmux new -s $session
-    else;
-        # Attach to created session
-        tmux attach-session -t $session
-    fi
+# if [[ -z $TMUX ]] && [[ -z $(pgrep tmux) ]]; then
+#     tmux has-session -t $session 2>/dev/null
+#     if [ $? != 0 ]; then
+#         # Set up your session
+#         tmux new -s $session
+#     else;
+#         # Attach to created session
+#         tmux attach-session -t $session
+#     fi
+# fi
+
+if [ -z "$TMUX" ]; then
+    tmux attach -t $session || tmux new -s $session
 fi
 
 # For colorls dracula
@@ -314,3 +321,11 @@ export PATH="$PATH:$GEM_HOME/bin"
 
 # for fzf dracula
 export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
