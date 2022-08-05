@@ -1,6 +1,3 @@
-# Use powerline
-USE_POWERLINE="true"
-
 if [[ -e ~/zsh/zsh-dracula ]]; then
     source ~/zsh/zsh-dracula
 fi
@@ -26,19 +23,19 @@ fi
 ### ===== end =====
 
 # My stuff lies here... ---------------------------------------------------------------
-source ~/.vars.sh
+export BASE='~'
 
 # zsh stuff
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 bindkey -v
-bindkey "^P" up-line-or-search
-bindkey '^N' complete-word       # ctrl + space | complete
-bindkey '^ ' autosuggest-accept  # shift + tab  | autosuggest
+bindkey '^P' history-substring-search-up
+bindkey '^N' history-substring-search-down
+bindkey '^ ' autosuggest-accept  # ctrl + space | complete
 
 # tmux stuff
 if [ -z "$TMUX" ]; then
-    tmux attach -t main || tmux new -s main
+    tmux new-session -A -s main
 fi
 
 # source my aliases
