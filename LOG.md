@@ -199,7 +199,6 @@ yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
 ### Stuff that I themed:
 
 - [x] wallpapers https://draculatheme.com/wallpaper
-- [ ] grub https://draculatheme.com/grub
 - [x] gtk https://draculatheme.com/gtk
   - [ ] Steam https://draculatheme.com/steam
   - [ ] Libreoffice https://draculatheme.com/libreoffice

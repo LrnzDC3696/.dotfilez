@@ -26,7 +26,7 @@ fi
 export BASE='~'
 
 # zsh stuff
-ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_STRATEGY=(history completion match_prev_cmd)
 
 bindkey -v
 bindkey '^P' history-substring-search-up
