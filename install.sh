@@ -4,13 +4,12 @@ source ~/.vars.sh
 # Setting up the log file
 LOG_FILE=~/install_progress_log.txt
 
-if [[ ! -f LOG_FILE ]]; then
-    touch $LOG_FILE
-fi
+date >> $LOG_FILE
 
 function custom_install {
     {
-        sudo pacman -S --noconfirm $1 && echo "$1 Installed" >> $LOG_FILE
+        sudo pacman -S --noconfirm $1 &&
+        echo "$1 Installed" >> $LOG_FILE
     } || {
         echo "$1 FAILED TO INSTALL!!!" >> $LOG_FILE
     }
@@ -24,12 +23,10 @@ custom_install neovim
 custom_install xclip
 
 custom_install git
-custom_install gh
+custom_install github-cli
 
 custom_install python
 custom_install npm
-
-custom_install github-cli
 
 # commonly used non usefull stuff
 custom_install noto-fonts-emoji
@@ -46,7 +43,7 @@ custom_install speedtest-cli
 # keyboard related stuff
 custom_install xorg-xmodmap
 custom_install xorg-xev
-custom_install xorg-setkbmap
+custom_install xorg-setxkbmap
 custom_install xorg-xset
 
 # # custom_installing yay
