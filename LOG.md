@@ -235,3 +235,11 @@ yay -S --noconfirm ttf-fantasque-sans-mono ttf-google-sans
 - installed musics
 - synced email
 - added discord, chrome, terminal to autostart app
+
+## Things I did on i3
+
+- add install, dmenu, nitrogen, light
+- fixed keyboard related stuff
+- fixed the brightness key
+- did smth about notification
+- riced stuff

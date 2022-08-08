@@ -25,6 +25,8 @@ fi
 # My stuff lies here... ---------------------------------------------------------------
 export BASE='~'
 
+keys() { xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'; }
+
 # zsh stuff
 ZSH_AUTOSUGGEST_STRATEGY=(history completion match_prev_cmd)
 
@@ -32,11 +34,6 @@ bindkey -v
 bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
 bindkey '^ ' autosuggest-accept  # ctrl + space | complete
-
-# tmux stuff
-if [ -z "$TMUX" ]; then
-    tmux new-session -A -s main
-fi
 
 # source my aliases
 if [[ -e ~/zsh/alias.sh ]]; then

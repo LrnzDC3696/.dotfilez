@@ -34,7 +34,7 @@
   whoami = config user.email
 
 [core]
-  editor = neovim
+  editor = nvim
 
 [init]
   defaultBranch = main

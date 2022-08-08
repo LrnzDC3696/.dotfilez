@@ -28,6 +28,11 @@ alias tf='bash ~/.tmux/tmux-portal.sh'
 alias ff='cd $(find ~/Codes ~/.config/nvim -type d -not -path "*/\.git*" | fzf)'
 alias fff='cd $(find ~ -type d -not -path "*/\.git*" | fzf)'
 
+# tmux stuff
+alias main="tmux new-session -A -s main"
+
+# alias keys="xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf \"%-3s %s\n\", $5, $8 }'"
+
 # from manjaro-zsh-config ?
 alias cp="cp -i"                                                # Confirm before overwriting something
 alias df='df -h'                                                # Human-readable sizes
