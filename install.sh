@@ -39,7 +39,6 @@ custom_install ranger
 custom_install bpytop
 custom_install gdu
 custom_install speedtest-cli
-custom_install pactl
 custom_install playerctl
 
 # keyboard related stuff
@@ -53,10 +52,10 @@ custom_install xorg-xbacklight
 custom_install i3  # the window manager
 custom_install maim  # maim screenshot stuff
 custom_install dmenu  # dmenu
-custom_install feh  # used to set the
-custom_install lxappearance
+custom_install feh  # used to set the wallpaper
+custom_install lxappearance  # used to set the theme
 
-# # custom_installing yay
+# custom_installing yay
 {
     git clone https://aur.archlinux.org/yay-git.git &&
     cd yay-git &&
@@ -100,6 +99,12 @@ custom_install lxappearance
 
 # # =======================================
 
+# Make the code directory
+if [ $BASE ]; then
+    mkdir -p $BASE/Codes
+    mkdir -p $BASE/Codes/scripts
+fi
+
 # setup git
 {
     gh auth login &&
@@ -107,12 +112,6 @@ custom_install lxappearance
 } || {
     echo "github FAILED TO AUTH!!!" >> $LOG_FILE
 }
-
-# Make the code directory
-if [ $BASE ]; then
-    mkdir -p $BASE/Codes
-    mkdir -p $BASE/Codes/scripts
-fi
 
 # set zsh to be default shell
 if [ ! -r /usr/bin/zsh ]; then
