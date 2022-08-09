@@ -254,7 +254,7 @@ client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 client.background       #F8F8F2
 
 bar {
-  status_command i3blocks -c ~/.config/i3blocks/config
+  status_command i3status
   position top
   height 25
 
