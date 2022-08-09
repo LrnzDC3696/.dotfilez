@@ -39,12 +39,22 @@ custom_install ranger
 custom_install bpytop
 custom_install gdu
 custom_install speedtest-cli
+custom_install pactl
+custom_install playerctl
 
 # keyboard related stuff
 custom_install xorg-xmodmap
 custom_install xorg-xev
 custom_install xorg-setxkbmap
 custom_install xorg-xset
+custom_install xorg-xbacklight
+
+# i3wm stuff
+custom_install i3  # the window manager
+custom_install maim  # maim screenshot stuff
+custom_install dmenu  # dmenu
+custom_install feh  # used to set the
+custom_install lxappearance
 
 # # custom_installing yay
 {
