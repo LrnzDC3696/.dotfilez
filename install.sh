@@ -86,7 +86,7 @@ custom_install lxappearance  # used to set the theme
 # # custom_installing discord
 
 {
-    sudo pacman -s --noconfirm discord &&
+    sudo pacman -S --noconfirm discord &&
     git clone https://github.com/betterdiscord/betterdiscord.git &&
     cd betterdiscord &&
     npm install &&
