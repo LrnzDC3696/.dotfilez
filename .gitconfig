@@ -1,0 +1,106 @@
+# INCLUDES
+# --------
+# Local/Private config goes in the include
+
+[credential "https://github.com"]
+  helper =
+  helper = !/usr/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+  helper =
+  helper = !/usr/bin/gh auth git-credential
+
+[include]
+  path = ~/.gitconfig.local
+
+[alias]
+  a = add
+  aa = add --all
+  b = branch
+  c = commit
+  co = checkout
+  d = diff
+  pl = pull
+  ph = push
+  s = status
+
+  # List aliases.
+  aliases = config --get-regexp alias
+
+  # List contributors with number of commits.
+  contributors = shortlog --summary --numbered
+
+  # Show the user email for the current repository.
+  whoami = config user.email
+
+[core]
+  editor = nvim
+
+[init]
+  defaultBranch = main
+
+[help]
+  # Automatically correct and execute mistyped commands.
+  autocorrect = 1
+
+; [commit]
+;     gpgSign = true# https://help.github.com/articles/signing-commits-using-gpg
+
+; # URL ALIASES
+; # -----------
+; # Alias for Dracula Org repositories
+
+; [url "https://github.com/dracula/"]
+;   insteadOf = dracula://
+
+; # COLORS
+; # ------
+; # Dracula Dark Theme
+
+; [color]
+;   ui = auto
+
+; [color "branch"]
+;   current = cyan bold reverse
+;   local = white
+;   plain =
+;   remote = cyan
+
+; [color "diff"]
+;   commit =
+;   func = cyan
+;   plain =
+;   whitespace = magenta reverse
+;   meta = white
+;   frag = cyan bold reverse
+;   old = red
+;   new = green
+
+; [color "grep"]
+;   context =
+;   filename =
+;   function =
+;   linenumber = white
+;   match =
+;   selected =
+;   separator =
+
+; [color "interactive"]
+;   error =
+;   header =
+;   help =
+;   prompt =
+
+; [color "status"]
+;   added = green
+;   changed = white
+;   header =
+;   localBranch =
+;   nobranch =
+;   remoteBranch = cyan bold
+;   unmerged = magenta bold reverse
+;   untracked = red
+;   updated = green bold
+[user]
+	email = lrnzdc3696@outlook.com
+	name = LrnzDC3696
