@@ -7,3 +7,5 @@ export GIT_EDITOR="nvim"
 
 # add my executable scripts
 export PATH="$HOME/scripts/bin:$PATH"
+# add my local to bin
+export PATH="$HOME/.local/bin::$PATH"

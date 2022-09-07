@@ -1,4 +1,5 @@
 alias nekopara="wine ~/Dame/NEKOPARA.vol.1.R18/NEKOPARA.vol.1.R18/nekopara_vol1.exe"
+alias monkeytype="tt -notheme -blockcursor -bold -t 30 -nohighlight"
 
 alias ..="cd .."
 alias ...="cd ../.."
