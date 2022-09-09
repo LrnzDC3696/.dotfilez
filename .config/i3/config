@@ -31,8 +31,8 @@ exec --no-startup-id dex --autostart --environment i3
 # screen before suspend. Use loginctl lock-session to lock your screen.
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- sh ~/scripts/lock.sh
 # exec xautolock -time 3 -locker "sh ~/scripts/lock.sh" &
-# exec xset s 180 180
-exec --no-startup-id xidlehook --detect-sleep --not-when-audio --not-when-fullscreen --timer 69 "sh ~/scripts/lock.sh" "" &
+exec xset s 69 69
+# exec --no-startup-id xidlehook --detect-sleep --not-when-audio --not-when-fullscreen --timer 69 "sh ~/scripts/lock.sh" "" &
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -323,9 +323,9 @@ exec_always "feh --bg-scale --randomize /home/$USER/Pictures/Wallpapers/Active/c
 # exec --no-startup-id i3-msg 'workspace $ws2; exec google-chrome-stable'
 assign [class="Alacritty"] $ws1
 assign [class="Google-chrome"] $ws2
-assign [class="discord"] $ws3
-assign [class="Steam"] $ws4
-assign [class="libreoffice"] $ws10
+assign [class="libreoffice"] $ws3
+assign [class="Steam"] $ws6
+assign [class="discord"] $ws10
 
 # jump to urgent
 # for_window [urgent="latest"] focus
@@ -333,7 +333,7 @@ bindsym $mod+u [urgent=latest] focus
 
 exec --no-startup-id $terminal
 exec --no-startup-id google-chrome-stable
-exec --no-startup-id discord
+# exec --no-startup-id discord
 
 # keybinds for layout
 bindsym Mod1+Shift+1 exec setxkbmap us && notify-send -t 6969 qwerty && xmodmap ~/.Xmodmap
