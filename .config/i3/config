@@ -31,7 +31,7 @@ exec --no-startup-id dex --autostart --environment i3
 # screen before suspend. Use loginctl lock-session to lock your screen.
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- sh ~/scripts/lock.sh
 # exec xautolock -time 3 -locker "sh ~/scripts/lock.sh" &
-exec xset s 69 69
+exec xset s 420 420
 # exec --no-startup-id xidlehook --detect-sleep --not-when-audio --not-when-fullscreen --timer 69 "sh ~/scripts/lock.sh" "" &
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
@@ -59,9 +59,9 @@ bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5 && light -O
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 && light -O
 
 # Screenshots
-bindsym Ctrl+Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
-bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
-bindsym Ctrl+Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+bindsym Ctrl+Print exec --no-startup-id maim "/home/$USER/Pictures/Screenshots/$(date).png"
+bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/Screenshots/$(date).png"
+bindsym Ctrl+Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/Screenshots/$(date).png"
 
 # Clipboard Screenshots
 bindsym Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
@@ -184,14 +184,14 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 # bindsym $mod+Shift+e exec i3-msg exit
-set $Locker sh ~/scripts/lock.sh && sleep 3
+set $Locker sh ~/scripts/lock.sh
 
 set $mode_system System: (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
-    bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
-    bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+    bindsym s exec --no-startup-id systemctl suspend && $Locker, mode "default"
+    bindsym h exec --no-startup-id systemctl hibernate && $Locker, mode "default"
     bindsym r exec --no-startup-id systemctl reboot, mode "default"
     bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
 
@@ -266,7 +266,7 @@ bar {
   status_command i3status
   position top
   height 25
-  tray_output none
+  # tray_output none
   separator_symbol ":|:"
   strip_workspace_numbers yes
   strip_workspace_name no
@@ -331,7 +331,7 @@ assign [class="discord"] $ws10
 # for_window [urgent="latest"] focus
 bindsym $mod+u [urgent=latest] focus
 
-exec --no-startup-id $terminal
+# exec --no-startup-id $terminal
 exec --no-startup-id google-chrome-stable
 # exec --no-startup-id discord
 

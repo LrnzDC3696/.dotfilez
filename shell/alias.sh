@@ -26,7 +26,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias resource='source ~/.zshrc'
 
 alias revise='sudo pacman -Syyu'
-alias pkg='sudo pacman'
+alias pacman='sudo pacman'
 
 alias p='python'
 alias pm='python manage.py'
@@ -36,6 +36,7 @@ alias pt='poetry'
 alias tf='sh ~/scripts/tmux-sessionizer.sh'
 alias ff='cd $(find ~/Codes ~/.config/nvim -type d -not -path "*/\.git*" | fzf)'
 alias fff='cd $(find ~ -type d -not -path "*/\.git*" | fzf)'
+alias ffff='cd $(find ~ | fzf)'
 
 # tmux stuff
 alias main="tmux new-session -A -s main"
