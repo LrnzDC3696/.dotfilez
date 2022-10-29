@@ -1,12 +1,12 @@
 # dotfiles
 A repo where I keep my linux setup
 
+This repository is about my own setup system
+If you want to know more about what this is try checking [this](https://github.com/holman/dotfiles?fbclid=IwAR1CX8ip8ahurb68-uoj625QoHqiQVr59HN26Ab7X0OtBt9-IB5aaPYK3qU#readme) out
 
-
-
-This repository is about 
-
-
+# I am open to suggestions
+If you would like to add more features or optimizations on my setup 
+feel free to do so, I am open to suggestions. thank you!
 
 ## How to Contribute:
 
@@ -23,9 +23,10 @@ This repository is about
 git clone {insert link here}
 ```
 ![image](https://user-images.githubusercontent.com/95162875/197396584-6f17fdd4-a343-4e76-ac63-fdcbc750e908.png)
+
 ```bash
 Then open the file using your favourite editor
-
+```
 
 
 ### 4. Pushing:
